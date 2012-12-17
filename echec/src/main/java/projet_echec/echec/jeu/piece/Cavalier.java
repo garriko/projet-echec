@@ -25,7 +25,8 @@ public class Cavalier extends Piece{
 
 	@Override
 	public ArrayList<Case> getDeplacementPossible(Case caseActuelle) {
-		// TODO Auto-generated method stub
+		ArrayList<Case> lp = new ArrayList<Case>();
+		
 		return null;
 	}
 

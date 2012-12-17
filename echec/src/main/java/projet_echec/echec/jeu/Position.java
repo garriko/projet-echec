@@ -1,4 +1,4 @@
-package projet_echec.echec.jeu;
+	package projet_echec.echec.jeu;
 /**
  * 
  * @author Adrien
@@ -15,13 +15,13 @@ public class Position {
 	/**
 	 * donne la position en largeur de la case sur le plateau
 	 */
-	String largeur;
+	int largeur;
 	/**
 	 * constructeur
 	 * @param hauteur
 	 * @param largeur
 	 */
-	public Position(int hauteur, String largeur) {
+	public Position(int hauteur, int largeur) {
 		this.hauteur = hauteur;
 		this.largeur = largeur;
 	}
@@ -34,10 +34,10 @@ public class Position {
 	public void setHauteur(int hauteur) {
 		this.hauteur = hauteur;
 	}
-	public String getLargeur() {
+	public int getLargeur() {
 		return largeur;
 	}
-	public void setLargeur(String largeur) {
+	public void setLargeur(int largeur) {
 		this.largeur = largeur;
 	}
 	
