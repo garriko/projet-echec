@@ -3,10 +3,11 @@ import java.util.ArrayList;
 
 import projet_echec.echec.jeu.Case;
 import projet_echec.echec.jeu.Piece;
+import projet_echec.echec.jeu.Position;
 
 /**
  * 
- * @author Kevin
+ * @author Adrien
  * @version 0.0.1
  * @see Piece
  * Cette classe sert à définir les attributs de la pièce Fou.
@@ -21,9 +22,21 @@ public class Fou extends Piece {
 	}
 
 	@Override
-	public ArrayList<Case> getDeplacementPossible(Case caseActuelle) {
-		// TODO Auto-generated method stub
-		return null;
+	public ArrayList<Case> getDeplacementPossible(Case pos) {
+				ArrayList<Case> lp= new ArrayList<Case>();
+				Case hd = new Case(new Position(pos.getPosition().getHauteur(),pos.getPosition().getLargeur()));
+				Case hg = new Case(new Position(pos.getPosition().getHauteur(),pos.getPosition().getLargeur()));
+				Case bd = new Case(new Position(pos.getPosition().getHauteur(),pos.getPosition().getLargeur()));
+				Case bg = new Case(new Position(pos.getPosition().getHauteur(),pos.getPosition().getLargeur()));
+				for (int i=0;i<8;i++){
+				hd.setPosition(hd.getPosition())
+				if(isDeplacementOk(c)){
+					lp.add(c);
+					}
+				}
+		return lp;
+
+		}
 	}
 
 }
