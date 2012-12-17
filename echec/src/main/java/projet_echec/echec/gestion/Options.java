@@ -9,6 +9,11 @@ package projet_echec.echec.gestion;
  * @version 0.0.1
  *
  */
+<<<<<<< HEAD
+
+public class Options {
+=======
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 
 public class Options {
 	private int dureeTourJ1;

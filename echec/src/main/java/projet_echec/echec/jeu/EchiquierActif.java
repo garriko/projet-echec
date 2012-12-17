@@ -1,7 +1,10 @@
 package projet_echec.echec.jeu;
+<<<<<<< HEAD
+=======
 
 import java.util.Timer;
 
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 /**
  * 
  * @author Adrien
