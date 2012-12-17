@@ -9,14 +9,26 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ * 
+ * @author Anne-Sophie
+ * 
+ * Fenêtre de la popup de demande de sauvegarde lorsque l'utilisateur 
+ * quitte une partie en cours
+ *
+ */
+
 public class InterfacePopupSauvegarderQuitter {
 	
 	JFrame fenetre=new JFrame("Popup");
 	Container tmp = fenetre.getContentPane();
-	JButton Bouton1 = new JButton(new ImageIcon("oui.png"));
-	JButton Bouton2 = new JButton(new ImageIcon("non.png"));
+	JButton Bouton1 = new JButton(new ImageIcon("images/oui.png"));
+	JButton Bouton2 = new JButton(new ImageIcon("images/non.png"));
 	JTextField texte = new JTextField("sauvegarde");
 	
+	/**
+	 * Constructeur de la classe
+	 */
 	public InterfacePopupSauvegarderQuitter() {
 		
 		Bouton1.setBounds(105, 257, 105, 52); //position x, position y, largeur, hauteur
@@ -27,7 +39,7 @@ public class InterfacePopupSauvegarderQuitter {
 		Bouton1.addActionListener(listen);
 		Bouton2.addActionListener(listen);
 	
-		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("sauvegarderQuitter.png").getImage());
+		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("images/sauvegarderQuitter.png").getImage());
 		boutonsChoix.setLayout(null);	 
 		boutonsChoix.add(Bouton1);   
 		boutonsChoix.add(Bouton2);

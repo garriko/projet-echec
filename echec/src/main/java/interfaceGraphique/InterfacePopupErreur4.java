@@ -8,13 +8,24 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ * 
+ * @author Anne-Sophie
+ *
+ * Fenêtre de l'interface graphique de la popup lançant un message d'erreur 
+ * lorsque l'utilisateur tente d'ouvrir plus de quatre parties simultanément.
+ *
+ */
+
 public class InterfacePopupErreur4 {
 	
 	JFrame fenetre=new JFrame("Popup");
 	Container tmp = fenetre.getContentPane();
-	JButton Bouton1 = new JButton(new ImageIcon("ok.png"));
+	JButton Bouton1 = new JButton(new ImageIcon("images/ok.png"));
 
-	
+	/**
+	 * Constructeur de la classe
+	 */
 	public InterfacePopupErreur4() {
 		
 		Bouton1.setBounds(150, 215, 160, 76); //position x, position y, largeur, hauteur
@@ -22,7 +33,7 @@ public class InterfacePopupErreur4 {
 		Ecouteur listen=new Ecouteur();
 		Bouton1.addActionListener(listen);
 	
-		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("erreur.png").getImage());
+		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("images/erreur.png").getImage());
 		boutonsChoix.setLayout(null);	 
 		boutonsChoix.add(Bouton1);   
 		boutonsChoix.setOpaque(false);
