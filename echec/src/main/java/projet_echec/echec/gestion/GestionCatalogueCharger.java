@@ -14,4 +14,27 @@ package projet_echec.echec.gestion;
 
 public class GestionCatalogueCharger extends Gestion {
 
+	
+	
+	/**
+	 * 
+	 */
+	public GestionCatalogueCharger() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	/**
+	 * Charge la liste des parties non terminées
+	 */
+	@Override
+	public void chargerListe() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void supprimerPartie(String nomPartie) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
