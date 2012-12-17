@@ -1,9 +1,6 @@
 package interfaceGraphique;
 
-
 import java.awt.Container;
-import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -11,13 +8,25 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ * 
+ * @author Anne-Sophie
+ * 
+ * Fenêtre de l'interface graphique de la popup de confirmation de suppression 
+ * d'une partie ou de la liste d'une partie
+ *
+ */
+
 public class InterfacePopupSuppression {
 	
 	JFrame fenetre=new JFrame("Popup");
 	Container tmp = fenetre.getContentPane();
-	JButton Bouton1 = new JButton(new ImageIcon("oui.png"));
-	JButton Bouton2 = new JButton(new ImageIcon("non.png"));
+	JButton Bouton1 = new JButton(new ImageIcon("images/oui.png"));
+	JButton Bouton2 = new JButton(new ImageIcon("images/non.png"));
 	
+	/**
+	 * Constructeur de la classe
+	 */
 	public InterfacePopupSuppression() {
 		
 		Bouton1.setBounds(105, 175, 105, 52); //position x, position y, largeur, hauteur
@@ -27,7 +36,7 @@ public class InterfacePopupSuppression {
 		Bouton1.addActionListener(listen);
 		Bouton2.addActionListener(listen);
 	
-		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("popup.png").getImage());
+		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("images/suppression.png").getImage());
 		boutonsChoix.setLayout(null);	 
 		boutonsChoix.add(Bouton1);   
 		boutonsChoix.add(Bouton2);
@@ -47,24 +56,5 @@ public class InterfacePopupSuppression {
 	
 	public static void main(String[] args){
 		new InterfacePopupSuppression();
-	}
-}
-
-
-class TestImagePanel extends JPanel {
-	 
-	private static final long serialVersionUID = 1L;
-	private Image img;
- 
-	public TestImagePanel(String img) {
-		this(new ImageIcon(img).getImage());
-	}
- 
-	public TestImagePanel(Image img) {
-		this.img = img;
-	}
- 
-	public void paintComponent(Graphics g) {
-		g.drawImage(img, 0, 0, this);
 	}
 }

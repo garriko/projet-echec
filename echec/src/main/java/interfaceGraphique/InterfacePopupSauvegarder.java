@@ -9,14 +9,25 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+/**
+ * 
+ * @author Anne-Sophie
+ * 
+ * Fenêtre de la popup de confirmation de sauvegarde d'une partie
+ *
+ */
+
 public class InterfacePopupSauvegarder {
 	
 	JFrame fenetre=new JFrame("Popup");
 	Container tmp = fenetre.getContentPane();
-	JButton Bouton1 = new JButton(new ImageIcon("okSauvegarde.png"));
-	JButton Bouton2 = new JButton(new ImageIcon("annulerSauvegarde.png"));
+	JButton Bouton1 = new JButton(new ImageIcon("images/okSauvegarde.png"));
+	JButton Bouton2 = new JButton(new ImageIcon("images/annulerSauvegarde.png"));
 	JTextField texte = new JTextField("sauvegarde");
 	
+	/**
+	 * Constructeur de la classe
+	 */
 	public InterfacePopupSauvegarder() {
 		
 		Bouton1.setBounds(105, 195, 103, 50); //position x, position y, largeur, hauteur
@@ -27,7 +38,7 @@ public class InterfacePopupSauvegarder {
 		Bouton1.addActionListener(listen);
 		Bouton2.addActionListener(listen);
 	
-		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("sauvegarde.png").getImage());
+		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("images/sauvegarde.png").getImage());
 		boutonsChoix.setLayout(null);	 
 		boutonsChoix.add(Bouton1);   
 		boutonsChoix.add(Bouton2);
