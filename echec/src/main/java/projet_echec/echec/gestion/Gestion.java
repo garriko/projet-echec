@@ -1,5 +1,7 @@
 package projet_echec.echec.gestion;
 
+import java.util.Vector;
+
 
 /**
  * 
@@ -15,5 +17,27 @@ package projet_echec.echec.gestion;
  */
 
 public abstract class Gestion {
-
+	/**
+	 * Liste des parties pouvant être chargées
+	 */
+	protected Vector<String> listePartie;
+	/**
+	 * partie sélectionnée par l'utilisateur
+	 */
+	protected String partieSelect;
+	
+	public Gestion(){
+		
+	}
+	/**
+	 * Charge la liste de toutes les parties disponibles
+	 */
+	public abstract void chargerListe();
+	
+	/**
+	 * Supprime de la liste (et du disque dur) la partie correspondant à nomPartie
+	 * @param nomPartie Nom de la partie à supprimer
+	 */
+	public abstract void supprimerPartie(String nomPartie);
+	
 }
