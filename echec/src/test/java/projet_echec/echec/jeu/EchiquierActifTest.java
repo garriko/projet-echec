@@ -11,6 +11,7 @@ public class EchiquierActifTest extends TestCase{
 	public void testEchec(){
 		
 		assertTrue( true );
+		//TODO : test echec
 		
 	}
 	
@@ -20,7 +21,7 @@ public class EchiquierActifTest extends TestCase{
 	public void testechecEtMat(){
 		
 		assertTrue( true );
-		
+		//TODO : test echec et mat
 	}
 	
 	/**
@@ -29,6 +30,7 @@ public class EchiquierActifTest extends TestCase{
 	public void testpat(){
 		
 		assertTrue( true );
+		//TODO :test pat
 		
 	}
 	/**
@@ -37,6 +39,7 @@ public class EchiquierActifTest extends TestCase{
 	public void testselectionnerCase(){
 		
 		assertTrue( true );
+		//TODO : test selectionner case
 	}
 	
 	/**
@@ -45,6 +48,7 @@ public class EchiquierActifTest extends TestCase{
 	public void testdeplacer(){
 		
 		assertTrue( true );
+		//TODO :test deplacer
 		
 	}
 	

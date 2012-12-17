@@ -16,7 +16,10 @@ public abstract class Piece {
 	 * Valeurs possibles : "blanc" ou "noir"
 	 */
 	protected String camp;
-	
+	/**
+	 * constructeur
+	 * @param camp
+	 */
 	public Piece(String camp){
 		this.camp=camp;
 	}

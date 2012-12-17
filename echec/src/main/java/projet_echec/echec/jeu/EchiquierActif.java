@@ -13,23 +13,23 @@ public class EchiquierActif extends Echiquier {
 	/**
 	 * Temps restant au joueur avant la fin de son tour 
 	 */
-	Timer tempsRestant;
+	private Timer tempsRestant;
 	/**
 	 * Temps total du jeux depuis le début de la partie
 	 */
-	Timer tempsTotal;
+	private Timer tempsTotal;
 	/**
 	 * Case séléctionné par le joueur ( via l'interface graphique)
 	 */
-	Case caseSelectionne;
+	private Case caseSelectionne;
 	/**
 	 * case ou se situe le roi blanc
 	 */
-	Case caseRoiBlanc;
+	private Case caseRoiBlanc;
 	/**
 	 * case ou se situe le roi noir
 	 */
-	Case caseRoiNoir;
+	private Case caseRoiNoir;
 	
 	
 	/**
@@ -51,10 +51,11 @@ public class EchiquierActif extends Echiquier {
 	 * Test si on est en position d'échec
 	 * @return true si l'un des joueurs est en echec
 	 */
-	public boolean testEchec(){
+	public boolean echec(){
 		boolean a;
 		a=true;
 		return a;
+		//TODO : test echec
 	}
 	
 	/**
@@ -65,6 +66,7 @@ public class EchiquierActif extends Echiquier {
 		boolean a;
 		a=true;
 		return a;
+		//TODO :test echec et mat
 		
 	}
 	/**
@@ -75,13 +77,14 @@ public class EchiquierActif extends Echiquier {
 		boolean a;
 		a=true;
 		return a;
+		//TODO : pat
 	}
 	/**
 	 * recupère la case selectionné envoyé par l'interface graphique
 	 * @param caseSelectionne
 	 */
 	public void selectionnerCase(Case caseSelectionne){
-		
+		//TODO : selectionner case
 		
 	}
 	/**
@@ -90,7 +93,50 @@ public class EchiquierActif extends Echiquier {
 	 * @param caseArrivee: le joueur a selectionné une case d'arrivée sur le plateau
 	 */
 	public void deplacer(Case caseDepart, Case caseArrivee){
-		
+		//TODO : deplacer
+	}
+	
+	/**
+	 * getter/setter
+	 */
+	public Timer getTempsRestant() {
+		return tempsRestant;
+	}
+
+	public void setTempsRestant(Timer tempsRestant) {
+		this.tempsRestant = tempsRestant;
+	}
+
+	public Timer getTempsTotal() {
+		return tempsTotal;
+	}
+
+	public void setTempsTotal(Timer tempsTotal) {
+		this.tempsTotal = tempsTotal;
+	}
+
+	public Case getCaseSelectionne() {
+		return caseSelectionne;
+	}
+
+	public void setCaseSelectionne(Case caseSelectionne) {
+		this.caseSelectionne = caseSelectionne;
+	}
+
+	public Case getCaseRoiBlanc() {
+		return caseRoiBlanc;
+	}
+
+	public void setCaseRoiBlanc(Case caseRoiBlanc) {
+		this.caseRoiBlanc = caseRoiBlanc;
+	}
+
+	public Case getCaseRoiNoir() {
+		return caseRoiNoir;
+	}
+
+	public void setCaseRoiNoir(Case caseRoiNoir) {
+		this.caseRoiNoir = caseRoiNoir;
 	}
 	
 	

@@ -44,6 +44,7 @@ public class Variantes {
 	public void saveVariante(String nomVariante){
 		
 	}
+	
 	/**
 	 * Charge la variante située dans le fichier nomVariante.vech
 	 * @param nomVariante
