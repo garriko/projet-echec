@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+<<<<<<< HEAD
+=======
 /**
  * 
  * @author Anne-Sophie
@@ -17,15 +19,22 @@ import javax.swing.JPanel;
  *
  */
 
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 public class InterfacePopupErreur4 {
 	
 	JFrame fenetre=new JFrame("Popup");
 	Container tmp = fenetre.getContentPane();
+<<<<<<< HEAD
+	JButton Bouton1 = new JButton(new ImageIcon("ok.png"));
+
+	
+=======
 	JButton Bouton1 = new JButton(new ImageIcon("images/ok.png"));
 
 	/**
 	 * Constructeur de la classe
 	 */
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 	public InterfacePopupErreur4() {
 		
 		Bouton1.setBounds(150, 215, 160, 76); //position x, position y, largeur, hauteur
@@ -33,7 +42,11 @@ public class InterfacePopupErreur4 {
 		Ecouteur listen=new Ecouteur();
 		Bouton1.addActionListener(listen);
 	
+<<<<<<< HEAD
+		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("erreur.png").getImage());
+=======
 		JPanel boutonsChoix = new TestImagePanel(new ImageIcon("images/erreur.png").getImage());
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 		boutonsChoix.setLayout(null);	 
 		boutonsChoix.add(Bouton1);   
 		boutonsChoix.setOpaque(false);

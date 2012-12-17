@@ -1,15 +1,26 @@
 package projet_echec.echec.jeu;
 
+<<<<<<< HEAD
+/**
+ * 
+ * @author Adrien
+=======
 import java.util.Vector;
 
 /**
  * 
  * @author Kevin
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
  * @version 0.0.1
  * @see 
  *
  * Cette classe abstraite permet de définir ce qu’il se passe sur l’échiquier avec comme classes filles : échiquier passif et échiquier actif (cf. Echiquier actif et Echiquier passif).
  */
+<<<<<<< HEAD
+
+public abstract class Echiquier {
+=======
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 
 public abstract class Echiquier {
 	/**

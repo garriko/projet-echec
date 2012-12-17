@@ -1,7 +1,10 @@
 package projet_echec.echec.gestion;
 
+<<<<<<< HEAD
+=======
 import java.util.ArrayList;
 
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 /**
  * GestionJeu gère le nombre de parties en cours.
  * <p>
@@ -12,6 +15,11 @@ import java.util.ArrayList;
  * @version 0.0.1
  * @see Partie
  */
+<<<<<<< HEAD
+
+public class GestionJeu {
+=======
+>>>>>>> a8bca3d337f875e41fdcb04f3e288a7eb48b608e
 
 public class GestionJeu {
 	/**
