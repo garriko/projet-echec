@@ -1,7 +1,9 @@
 package projet_echec.echec.jeu.piece;
+import java.util.ArrayList;
+
 import projet_echec.echec.jeu.Case;
 import projet_echec.echec.jeu.Piece;
-import projet_echec.echec.jeu.Position;
+
 /**
  * 
  * @author Kevin
@@ -19,7 +21,7 @@ public class Reine extends Piece{
 	}
 
 	@Override
-	public Position[] getDeplacementPossible(Case caseActuelle) {
+	public ArrayList<Case> getDeplacementPossible(Case caseActuelle) {
 		// TODO Auto-generated method stub
 		return null;
 	}

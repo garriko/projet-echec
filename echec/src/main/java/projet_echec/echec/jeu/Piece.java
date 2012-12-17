@@ -1,4 +1,7 @@
 package projet_echec.echec.jeu;
+
+import java.util.ArrayList;
+
 /**
  * 
  * @author Kevin
@@ -18,7 +21,7 @@ public abstract class Piece {
 		this.camp=camp;
 	}
 	
-	public abstract Position[] getDeplacementPossible(Case caseActuelle);
+	public abstract ArrayList<Case> getDeplacementPossible(Case caseActuelle);
 	
 	
 }

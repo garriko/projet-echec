@@ -1,7 +1,9 @@
 package projet_echec.echec.jeu.piece;
+
+import java.util.ArrayList;
 import projet_echec.echec.jeu.Case;
 import projet_echec.echec.jeu.Piece;
-import projet_echec.echec.jeu.Position;
+
 
 /**
  * 
@@ -21,13 +23,13 @@ public class Pion extends Piece {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Position[] presenceAdversaire(Case caseActuelle){
+	public Case[] presenceAdversaire(Case caseActuelle){
 		return null;
 		
 	}
 	
 	@Override
-	public Position[] getDeplacementPossible(Case caseActuelle) {
+	public ArrayList<Case> getDeplacementPossible(Case caseActuelle) {
 		// TODO Auto-generated method stub
 		return null;
 	}
